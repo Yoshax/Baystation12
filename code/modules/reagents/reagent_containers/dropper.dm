@@ -73,7 +73,7 @@
 				return
 
 			else
-				trans = reagents.splash(target, amount_per_transfer_from_this, max_spill=0) //sprinkling reagents on generic non-mobs. Droppers are very precise
+				trans = reagents.trans_to_obj(target, amount_per_transfer_from_this)
 				to_chat(user, "<span class='notice'>You transfer [trans] units of the solution.</span>")
 
 		else // Taking from something
